@@ -20,7 +20,7 @@ import UIKit
 let ActiveNotif = NSApplication.didBecomeActiveNotification
 typealias Window = NSWindow
 #else
-let ActiveNotif = "fake"
+let ActiveNotif = Notification.Name("fake")
 typealias Window = UIWindow
 #endif
 
