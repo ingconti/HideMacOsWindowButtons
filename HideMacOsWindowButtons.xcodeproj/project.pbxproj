@@ -12,6 +12,7 @@
 		CE4FB6862A0C2AFC00AEFE39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4FB6852A0C2AFC00AEFE39 /* Preview Assets.xcassets */; };
 		CE4FB68E2A0C2B3100AEFE39 /* HideMacOsWindowButtonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FB68D2A0C2B3100AEFE39 /* HideMacOsWindowButtonsApp.swift */; };
 		CE4FB6902A0C2BB600AEFE39 /* NSHideButtonsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FB68F2A0C2BB600AEFE39 /* NSHideButtonsModifier.swift */; };
+		CE4FB7002A0CFF8F00AEFE39 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FB6FF2A0CFF8F00AEFE39 /* Commons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE4FB6872A0C2AFC00AEFE39 /* HideMacOsWindowButtons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HideMacOsWindowButtons.entitlements; sourceTree = "<group>"; };
 		CE4FB68D2A0C2B3100AEFE39 /* HideMacOsWindowButtonsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideMacOsWindowButtonsApp.swift; sourceTree = "<group>"; };
 		CE4FB68F2A0C2BB600AEFE39 /* NSHideButtonsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSHideButtonsModifier.swift; sourceTree = "<group>"; };
+		CE4FB6FF2A0CFF8F00AEFE39 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CE4FB68F2A0C2BB600AEFE39 /* NSHideButtonsModifier.swift */,
 				CE4FB6802A0C2AFB00AEFE39 /* ContentView.swift */,
+				CE4FB6FF2A0CFF8F00AEFE39 /* Commons.swift */,
 				CE4FB68D2A0C2B3100AEFE39 /* HideMacOsWindowButtonsApp.swift */,
 				CE4FB6822A0C2AFC00AEFE39 /* Assets.xcassets */,
 				CE4FB6872A0C2AFC00AEFE39 /* HideMacOsWindowButtons.entitlements */,
@@ -144,6 +147,7 @@
 			files = (
 				CE4FB6812A0C2AFB00AEFE39 /* ContentView.swift in Sources */,
 				CE4FB68E2A0C2B3100AEFE39 /* HideMacOsWindowButtonsApp.swift in Sources */,
+				CE4FB7002A0CFF8F00AEFE39 /* Commons.swift in Sources */,
 				CE4FB6902A0C2BB600AEFE39 /* NSHideButtonsModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

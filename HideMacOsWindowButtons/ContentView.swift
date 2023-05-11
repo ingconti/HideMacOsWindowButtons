@@ -15,14 +15,17 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification),
+        // 2nd method:
+        .onReceive(NotificationCenter.default.publisher(for: ActiveNotif),
                    perform: fixButtons(notif:))
 
     }
 
     
     func fixButtons( notif: Notification) {
+        #if os(macOS) || targetEnvironment(macCatalyst)
         customize(window: NSApp.mainWindow)
+        #endif
     }
     
 }

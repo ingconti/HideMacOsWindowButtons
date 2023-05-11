@@ -15,7 +15,7 @@ import SwiftUI
 class MyAppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        //print("AAAA")
+        // 1st method:
         //customize(window: NSApplication.shared.windows.first)
     }
 }
@@ -30,20 +30,5 @@ struct HideMacOsWindowButtonsApp: App {
            ContentView()
         }
     }
-}
-
-
-func customize(window: NSWindow?) {
-    guard let window = window else{
-        return
-    }
-    //window.titleVisibility = .hidden
-    //window.titlebarAppearsTransparent = true
-    window.isOpaque = false
-    window.backgroundColor = NSColor.green
-
-    window.standardWindowButton(.zoomButton)?.isHidden = true
-    window.standardWindowButton(.closeButton)?.isHidden = true
-    window.standardWindowButton(.miniaturizeButton)?.isHidden = true
 }
 
