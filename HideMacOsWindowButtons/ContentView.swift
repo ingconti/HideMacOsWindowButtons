@@ -20,15 +20,11 @@ struct ContentView: View {
                    perform: fixButtons(notif:))
 
     }
-
     
     func fixButtons( notif: Notification) {
-
-#if os(macOS) || targetEnvironment(macCatalyst)
         if !USE_APP_DELEGATE{
             customize(window: NSApp.mainWindow)
         }
-        #endif
     }
     
 }
