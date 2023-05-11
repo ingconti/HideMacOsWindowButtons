@@ -5,12 +5,20 @@
 //  Created by ing.conti on 11/05/23.
 //
 
-import AppKit
+
+//let USE_APP_DELEGATE = true
+let USE_APP_DELEGATE = false
 
 #if os(macOS) || targetEnvironment(macCatalyst)
-let ActiveNotif = Notification.Name("fake")
+import AppKit
+#else
+import UIKit
+#endif
+
+
+#if os(macOS) || targetEnvironment(macCatalyst)
+let ActiveNotif = NSApplication.didBecomeActiveNotification
 typealias Window = NSWindow
-//let ActiveNotif = NSApplication.didBecomeActiveNotification
 #else
 let ActiveNotif = "fake"
 typealias Window = UIWindow
@@ -22,9 +30,14 @@ typealias Window = UIWindow
 #endif
 
 
+fileprivate var count = 0
+
 func customize(window: Window?) {
 #if os(macOS) || targetEnvironment(macCatalyst)
 
+    count+=1
+    
+    print(USE_APP_DELEGATE ? "using App delegate" : "using notification", count)
     guard let window = window else{
         return
     }

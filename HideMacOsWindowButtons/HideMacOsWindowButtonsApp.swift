@@ -16,7 +16,9 @@ class MyAppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // 1st method:
-        //customize(window: NSApplication.shared.windows.first)
+        if USE_APP_DELEGATE{
+            customize(window: NSApplication.shared.windows.first)
+        }
     }
 }
 

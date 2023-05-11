@@ -23,8 +23,11 @@ struct ContentView: View {
 
     
     func fixButtons( notif: Notification) {
-        #if os(macOS) || targetEnvironment(macCatalyst)
-        customize(window: NSApp.mainWindow)
+
+#if os(macOS) || targetEnvironment(macCatalyst)
+        if !USE_APP_DELEGATE{
+            customize(window: NSApp.mainWindow)
+        }
         #endif
     }
     
